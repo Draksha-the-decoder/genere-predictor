@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route('/result',methods=['POST'])
 def result():
@@ -14,7 +14,7 @@ def result():
     article =[message]
     model = pickle.load(open("model.pkl", "rb"))
     result = model.predict(article)       
-    return render_template('home.html',text=output[result[0]],myarticle=message)
+    return render_template('index.html',text=output[result[0]],myarticle=message)
  
 if __name__ == "__main__":
     app.run(debug=True)
