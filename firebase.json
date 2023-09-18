@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "genere-predictor",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
