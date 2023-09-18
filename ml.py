@@ -19,8 +19,5 @@ mat= confusion_matrix(test.target,predicted)
 from sklearn.metrics import accuracy_score
 print("Accuracy",accuracy_score(test.target,predicted))
 
-# predicting category on new data based on trained model
-def predict_category(new_data,train=train,model=model):
-    pred = model.predict([new_data])
-    return train.target_names[pred[0]]
-predict_category('Jesus Christ')
+import pickle
+pickle.dump(model,open('model.pkl','wb'))
