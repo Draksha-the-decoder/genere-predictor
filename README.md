@@ -25,7 +25,7 @@ This project is a machine learning-based system designed to predict the genre of
    cd genere-predictor
 2. Run the Flask application to start the backend server.
    ```bash
-  python app.py
+   python app.py
 3. Open your web browser and navigate to http://localhost:5000 to access the application.
 4. To retrain the model or experiment with different datasets, make changes in ml.py
 
