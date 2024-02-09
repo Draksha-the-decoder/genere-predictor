@@ -1,5 +1,6 @@
 body{
     background-color: black; 
+    background-image: url("https://contenthub-static.grammarly.com/blog/wp-content/uploads/2022/08/BMD-3398.png");
     width:90vw;
     height: 90vh;
     display: flex;
@@ -7,16 +8,14 @@ body{
     align-items: center;
 }
 div{
-    background: linear-gradient(to bottom,grey, rgba(0, 183, 255, 0.658));
+    background: linear-gradient(to top,rgb(83, 129, 21,0.9), rgba(136, 199, 77, 0.9));
     display: inline-block;
-    color: aliceblue;        
     font-size: 3vw;
     text-align: center;                
     padding: 3vw;
     border-radius: 2vw;
 }
 h1{
-    color: rgb(235, 217, 217);
     font-size: 3rem;
 }       
 textarea{
@@ -25,17 +24,20 @@ textarea{
     padding: 12px 20px;
     margin: 8px 0;
     border-radius: 6px;
-    background-color: rgb(192, 229, 247);
+    background-color: rgb(24, 139, 40);
+    color: rgb(169, 236, 152);
     box-sizing: border-box;
+    border: none;
     resize: none;
+    font-size:16px;
 }
+textarea::placeholder {color: rgb(146, 228, 126);font-size: 15px;}
 input[type=submit]
 {
-    background-color: #61afce;
+    background-color: rgba(136, 199, 77);
     border: none;
-    color: white;
     padding: 12px 32px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 6px;
     margin: 4px 2px;
     cursor: pointer;
